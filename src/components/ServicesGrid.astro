@@ -1,0 +1,44 @@
+---
+import { Store, Coffee, Utensils, Refrigerator } from 'lucide-react';
+---
+<section class="py-24 bg-light-green/20 relative overflow-hidden">
+     <!-- Top Wavy Curve (Inverted to matching Previous section if needed, but here we can just be independent for now if previous section ended with white) -->
+    <!-- Note: Previous section (MicroMarket) was white background. This is light green. So flat transition is fine, or we can add a connector. The image shows a smooth flow. -->
+
+    <div class="container mx-auto px-6 relative z-10 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold font-heading mb-16 text-dark max-w-4xl mx-auto leading-tight">
+            A Leader in Delivering Premium Break Room Solutions for Dallas-Fort Worth Businesses
+        </h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-emerald-100 group cursor-pointer">
+                <div class="w-20 h-20 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    <Store size={36} strokeWidth={1.5} />
+                </div>
+                <h3 class="font-bold text-xl text-dark mb-2">Micro Markets</h3>
+                 <p class="text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">Self-service convenience</p>
+            </div>
+             <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-emerald-100 group cursor-pointer">
+                <div class="w-20 h-20 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    <Coffee size={36} strokeWidth={1.5} />
+                </div>
+                <h3 class="font-bold text-xl text-dark mb-2">Coffee & Water</h3>
+                 <p class="text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">Premium brewing</p>
+            </div>
+             <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-emerald-100 group cursor-pointer">
+                <div class="w-20 h-20 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    <Utensils size={36} strokeWidth={1.5} />
+                </div>
+                <h3 class="font-bold text-xl text-dark mb-2">Office Pantry</h3>
+                 <p class="text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">Stocked kitchen</p>
+            </div>
+             <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-emerald-100 group cursor-pointer">
+                <div class="w-20 h-20 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    <Refrigerator size={36} strokeWidth={1.5} />
+                </div>
+                <h3 class="font-bold text-xl text-dark mb-2">Vending</h3>
+                 <p class="text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">On-demand snacks</p>
+            </div>
+        </div>
+    </div>
+</section>
